@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Video Background</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow-y:scroll ;
+      scroll-behavior: smooth;
+      font-family: sans-serif;
+    }
+    #bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.4);
+  z-index: 0;
+}
+
+    #bg-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      object-fit: cover;
+      z-index: -1; /* This puts the video behind everything */
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+      color: white;
+      text-align: center;
+      padding-top: 200px;
+    }
+    
+
+    h1 {
+      font-size: 50px;
+      background: rgba(0, 0, 0, 0.5); /* optional background to make text readable */
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <video autoplay muted loop id="bg-video">
+    <source src="newzealand1.jpg.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+
+  <div class="content">
+    <h1>Welcome to NEWZEALAND</h1>
+    <p>Explore the beauty of nature and destinations</p>
+    <p>TOP DESTINATION
+        <h2>AUCKLAND,
+        ROTORA,
+        QUEENSTOWN,
+        MilFORD SOUND,
+        WAIHEKE ISLAND,
+        CHRISTCHURCH</h2>
+    </p>
+    <p>HOTELS IN NEWZEALAND
+      <h3>THE REES HOTEL</h3>
+      <h3>ROTORA THERMAL HOLIDAY PARK</h3>
+      <h3>AZUR LODGE</h3>
+     <h3> HUKA LODGE</h3>
+     <h3> THE GEORGE</h3>
+    </p>
+  </div>
+  <center>
+  <table border="1">
+    <tr>
+      <TH>PACKAGE TYPE</TH>
+      <th>DURATION</th>
+      <TH>DESTINATION</TH>
+      <TH>APPROX.COST(INR)</TH>
+    
+    </tr>
+    <TR>
+    <TD>BUDGET PACKAGE</TD>
+    <TD>6 DAYS/5 NIGHTS</TD>
+    <TD>AUCKLAND+ROTORUA</TD>
+    <TD>2,00,000-2,50,000 RUPEES</TD>
+    </TR>
+    <tr>
+      <td>Standard Package</td>
+      <td>8 days/7 nights</td>
+      <td>AUCKLAND+ROTORUA+QUEENSTOWN</td>
+      <td>2,60,000-3,20,000 rupees</td>
+
+    </tr>
+    <tr>
+      <td>Luxury/honeymoon</td>
+      <td>7 DAYS/6 NIGHTS</td>
+      <TD>CUSTOMIZE PACKAGES</TD>
+      <td>5,00,000-7,00,000 rupees</td>
+    </tr>
+    <tr>
+      <td>PREMIUM PACKAGE</td>
+      <td>10 <DAYS>
+      <9></9> NIGHTS</td>
+      <td>AUCKLAND+ROTORUA+QUEENSTOWN+MILFORD SOUND </td>
+      <td>3,50,000-4,50,000</td>
+    </tr>
+
+  </table>
+  <h1>PER PERSON</h1>
+  </center>
+
+</body>
+</html>

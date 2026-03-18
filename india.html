@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Video Background</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow-y:scroll ;
+      scroll-behavior: smooth;
+      font-family: sans-serif;
+    }
+    #bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.4);
+  z-index: 0;
+}
+
+    #bg-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      object-fit: cover;
+      z-index: -1; /* This puts the video behind everything */
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+      color: white;
+      text-align: center;
+      padding-top: 200px;
+    }
+    
+
+    h1 {
+      font-size: 50px;
+      background: rgba(0, 0, 0, 0.5); /* optional background to make text readable */
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <video autoplay muted loop id="bg-video">
+    <source src="indiavideo.mp4.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+
+  <div class="content">
+    <h1>Welcome to India</h1>
+    <p>Explore the beauty of nature and destinations</p>
+    <p>TOP DESTINATION
+        <h2>Manali-himachal pradesh,
+        jaipur-rajasthan,
+        Goa,
+        Kerala,
+        Agra,
+        varanasi
+        Jammu & Kashmir
+        Andaman & Nicobar Island
+        Mumbai 
+    </h2>
+    </p>
+    <p>HOTELS IN INDIA
+      <h3>THE OBEROI UDAIVILAS
+      <h3>TAJ LAKE PALACE</h3>
+      <h3>THE LEELA PALACE</h3>
+     <h3> THE TAJ MAHAL PALACE</h3>
+     <h3> ITS GRAND CHOLA</h3>
+    </p>
+  </div>
+  <center>
+  <table border="1">
+    <tr>
+      <TH>PACKAGE TYPE</TH>
+      <th>DURATION</th>
+      <TH>DESTINATION</TH>
+      <TH>APPROX.COST(INR)</TH>
+    
+    </tr>
+    <TR>
+    <TD>BUDGET PACKAGE</TD>
+    <TD>4 DAYS/3 NIGHTS</TD>
+    <TD>DELHI+AGRA</TD>
+    <TD>10000-15000 RUPEES</TD>
+    </TR>
+    <tr>
+      <td>Standard Package</td>
+      <td>6 days/5 nights</td>
+      <td>DELHI+AGRA+JAIPUR</td>
+      <td>18000-25000 rupees</td>
+
+    </tr>
+    <tr>
+      <td>Luxury/honeymoon</td>
+      <td>7 DAYS/6 NIGHTS</td>
+      <TD>KERALA </TD>
+      <td>40000-60000  rupees</td>
+    </tr>
+    <tr>
+      <td>GOA Tour</td>
+      <td>5 DAYS/4 NIGHTS</td>
+      <td>NORTH & SOUTH GOA </td>
+      <td>18000-30000</td>
+    </tr>
+    <TR>
+        <TD>HIMACHAL HILL TOUR</TD>
+        <TD>6 DAYS/5 NIGHTS</TD>
+        <TD>SHIMLA+MANALI</TD>
+        <TD>25000-40000</TD>
+    </TR>
+
+  </table>
+  <h1>PER PERSON</h1>
+  </center>
+
+</body>
+</html>

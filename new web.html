@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Wanderlust Tour</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: 'Segoe UI', sans-serif;
+      overflow-x: hidden;
+    }
+
+    /* Background Video */
+    #bg-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      z-index: -2;
+    }
+
+    /* Overlay on video for darkening */
+    .video-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.4);
+      z-index: -1;
+      repeat:no repeat;
+    }
+
+    /* Hero Section */
+    .hero-logo {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;      padding: 20px;
+    }
+
+    .hero-logo h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 10px #000;
+    }
+
+    .hero-logo img {
+      max-width: 900px;
+      width: 90%;
+      height: auto;
+      animation: fadeIn 2s ease-in-out;
+      filter: drop-shadow(2px 2px 6px black);
+      margin-bottom: 40px;
+    }
+
+    /* CTA Button */
+    .cta-button {
+      padding: 16px 40px;
+      background-color: #ffae00;
+      color: #000;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-decoration: none;
+    }
+
+    .cta-button:hover {
+      background-color: #ffaa33;
+      transform: scale(1.07);
+    }
+
+    /* Scroll Down Arrow */
+    .scroll-down {
+      position: absolute;
+      bottom: 30px;
+      font-size: 2rem;
+      color: white;
+      animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(10px); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Content */
+    .content {
+      padding: 60px 20px;
+      background: #fff;
+      color: #333;
+      text-align: center;
+    }
+
+    .content h2 {
+      margin-bottom: 20px;
+    }
+
+    .content p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Background Video -->
+  <video id="bg-video" autoplay muted loop playsinline>
+    <source src="beach.mp4.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Dark Overlay -->
+  <div class="video-overlay"></div>
+
+  <!-- Hero Section -->
+  <div class="hero-logo">
+    <h1>WELCOME TO THE TOUR</h1>
+    <img src="wanderlustlogo.jpg.png" alt="Wanderlust Logo">
+    <a href="images.html" class="cta-button">Explore Now</a>
+    <div class="scroll-down">⬇</div>
+  </div>
+
+  <!-- Scrollable Content -->
+  <div id="more" class="content">
+    <h1>About the Journey</h1>
+    <p>
+      <h2>Experience nature, adventure, and peace. Wanderlust takes you on a memorable journey across oceans and landscapes.</h2>
+    </p>
+  </div>
+</body>
+</html>
+       
+        
+               
+        
+         

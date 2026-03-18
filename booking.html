@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>International Tour Booking Form</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #e6faff; }
+        .booking-form {
+            background: #fff;
+            padding: 24px;
+            max-width: 460px;
+            margin: 32px auto;
+            border-radius: 8px;
+            box-shadow: 0 0 14px rgba(0,0,0,0.2);
+        }
+        label { display: block; margin-top: 14px; }
+        input, select, textarea { width: 100%; padding: 8px; border-radius: 4px; border: 1px solid #ccc; margin-top: 5px;}
+        .submit-btn { background: #0288d1; color: white; font-size: 1rem; padding: 10px 0; border: none; border-radius: 4px; margin-top: 20px;}
+        #bg-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    object-fit: cover;
+}
+    </style>
+</head>
+<body>
+    <div class="booking-form">
+        <h2>Book Your International Tour</h2>
+        <form>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="country">Select Country:</label>
+            <select id="country" name="country" required>
+                <option value="">--Choose Country--</option>
+                <option value="Thailand">Thailand</option>
+                <option value="India">India</option>
+                <option value="Italy">Italy</option>
+                <option value="Japan">Japan</option>
+                <option value="Switzerland">Switzerland</option>
+                <option value="Greece">Greece</option>
+                <option value="New Zealand">New Zealand</option>
+                <option value="France">France</option>
+            </select>
+
+            <label for="package">Package Type:</label>
+            <select id="package" name="package" required>
+                <option value="Budget">Budget Package</option>
+                <option value="Standard">Standard Package</option>
+                <option value="Luxury">Luxury/Honeymoon</option>
+                <option value="Group">Group Tour</option>
+            </select>
+
+            <label for="duration">Duration:</label>
+            <select id="duration" name="duration" required>
+                <option value="5D/5N">5 Days / 5 Nights</option>
+                <option value="6D/5N">6 Days / 5 Nights</option>
+                <option value="7D/6N">7 Days / 6 Nights</option>
+            </select>
+            
+            <label for="destination">Preferred Destination/City:</label>
+            <input type="text" id="destination" name="destination" placeholder="e.g. Bangkok, Rome, Tokyo" required>
+
+            <label for="hotel">Preferred Hotel:</label>
+            <input type="text" id="hotel" name="hotel" placeholder="Hotel Name (optional)">
+            
+            <label for="cost">Approximate Cost (INR):</label>
+            <input type="text" id="cost" name="cost" placeholder="Enter or leave blank">
+
+            <label for="requests">Special Requests:</label>
+            <textarea id="requests" name="requests" rows="3" placeholder="Any specific requirements?"></textarea>
+            <a href="payment.html">
+            <button type="submit" class="submit-btn">Book Now</a></button>
+            <video autoplay muted loop id="bg-video">
+    <source src="waterfall.mp4.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+        </form>
+    </div>
+</body>
+</html>
